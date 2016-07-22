@@ -4,6 +4,7 @@ try:
 except ImportError:
     from math import sin, cos, pi, atan2, sqrt
 
+
 def to_cartesian(r, theta, theta_units="radians"):
     """
     Converts polar r, theta to cartesian x, y.
@@ -21,6 +22,7 @@ def to_cartesian(r, theta, theta_units="radians"):
 
     return x, y
 
+
 def to_polar(x, y, theta_units="radians"):
     """
     Converts cartesian x, y to polar r, theta.
@@ -36,6 +38,7 @@ def to_polar(x, y, theta_units="radians"):
 
     return r, theta
 
+
 def to_proper_radians(theta):
     """
     Converts theta (radians) to be within -pi and +pi.
@@ -43,6 +46,7 @@ def to_proper_radians(theta):
     if theta > pi or theta < -pi:
         theta = theta % pi
     return theta
+
 
 def to_proper_degrees(theta):
     """
@@ -52,6 +56,7 @@ def to_proper_degrees(theta):
         theta = theta % 180
     return theta
 
+
 def to_degrees(theta):
     """
     Converts theta in radians to theta in degrees.
@@ -59,6 +64,7 @@ def to_degrees(theta):
 
     theta = to_proper_radians(theta)
     return theta / pi * 180
+
 
 def to_radians(theta):
     """

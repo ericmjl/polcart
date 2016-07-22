@@ -17,8 +17,9 @@ test_requirements = [
 
 setup(
     name='polcart',
-    version='2016.06.03',
-    description="A small utility for converting between polar and cartesian units.",
+    version='2016.06.04',
+    description="A small utility for converting between polar\
+and cartesian units.",
     long_description=readme,
     author="Eric J. Ma",
     author_email='ericmajinglong@gmail.com',

@@ -1,8 +1,9 @@
-from polcart import(to_cartesian, to_polar, to_radians, to_degrees,
-                    to_proper_radians, to_proper_degrees)
+from polcart import (to_cartesian, to_polar, to_radians, to_degrees,
+                     to_proper_radians, to_proper_degrees)
 from hypothesis.strategies import floats
 from hypothesis import given, assume
 import numpy as np
+
 
 @given(floats(), floats())
 def test_convert_xy(x, y):
@@ -43,6 +44,7 @@ def test_to_proper_radians(theta):
     theta = to_proper_radians(theta)
     assert theta <= np.pi and theta >= -np.pi
 
+
 @given(floats())
 def test_to_proper_degrees(theta):
     assume(np.isfinite(theta))
@@ -55,6 +57,7 @@ def test_to_degrees(theta):
     assume(np.isfinite(theta))
     theta = to_degrees(theta)
     assert theta <= 180 and theta >= -180
+
 
 @given(floats())
 def test_to_radians(theta):
