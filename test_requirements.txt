@@ -1,2 +1,2 @@
-hypothesis
-pytest
+hypothesis==3.4.2
+pytest==2.9.2
