@@ -11,14 +11,14 @@ install:
   - hash -r
   - conda config --set always_yes yes --set changeps1 no
   - conda update -q conda
+  - conda config --add channels ericmjl
 
   # Useful for debugging any issues with conda
   - conda info -a
 
-  # Install Python, py.text, and required packages.
-  - conda create -n build python=3.5
+  # Install Python, py.test, and required packages.
+  - conda env create -f build-env.yml
   - source activate build
-  - pip install -r requirements.txt
   - python setup.py install
 
 script:
