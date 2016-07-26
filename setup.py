@@ -6,14 +6,11 @@ from setuptools import setup
 with open('README.md') as readme_file:
     readme = readme_file.read()
 
-requirements = [
-    'numpy',
-]
+with open('requirements.txt') as req_file:
+    requirements = req_file.read()
 
-test_requirements = [
-    'hypothesis',
-    'pytest',
-]
+with open('test_requirements.txt') as testreq_file:
+    test_requirements = testreq_file.read()
 
 setup(
     name='polcart',
