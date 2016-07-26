@@ -4,6 +4,6 @@ dependencies:
 - numpy
 - python=3.5
 - pytest
-- hypothesis
-- pytest
-- pycodestyle
+pip:
+  - hypothesis
+  - pycodestyle
