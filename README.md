@@ -11,5 +11,5 @@ $ pip install polcart
 Install via `conda`:
 
 ```bash
-$ conda install polcart
+$ conda install -c ericmjl polcart
 ```
