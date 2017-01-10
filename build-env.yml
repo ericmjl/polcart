@@ -2,7 +2,7 @@ name: build
 dependencies:
 - matplotlib
 - numpy
-- python=3.6
+- python=3.5
 - pytest
 - hypothesis
 - pycodestyle
