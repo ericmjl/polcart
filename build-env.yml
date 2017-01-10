@@ -1,6 +1,5 @@
 name: build
 dependencies:
-- matplotlib
 - numpy
 - python=3.5
 - pytest
