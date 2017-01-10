@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ericmjl/polcart.svg?branch=master)](https://travis-ci.org/ericmjl/polcart)
+
 # polcart
 A small utility for converting between polar and cartesian units
 
