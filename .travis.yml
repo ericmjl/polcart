@@ -25,6 +25,3 @@ script:
   # Your test script goes here
   - pycodestyle .
   - py.test
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
