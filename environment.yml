@@ -3,6 +3,7 @@ dependencies:
 - numpy
 - python=3.6
 - pytest
+- pytest-cov
 - hypothesis
 - pycodestyle
 - pip:
