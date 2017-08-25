@@ -17,8 +17,8 @@ install:
   - conda info -a
 
   # Install Python, py.test, and required packages.
-  - conda env create -f build-env.yml
-  - source activate build
+  - conda env create -f environment.yml
+  - source activate polcart
   - python setup.py install
 
 script:
