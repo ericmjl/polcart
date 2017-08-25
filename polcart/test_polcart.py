@@ -1,8 +1,10 @@
-from .polcart import (to_cartesian, to_polar, to_radians, to_degrees,
-                     to_proper_radians, to_proper_degrees)
+from hypothesis import assume, given
 from hypothesis.strategies import floats
-from hypothesis import given, assume
+
 import numpy as np
+
+from .polcart import (to_cartesian, to_degrees, to_polar, to_proper_degrees,
+                      to_proper_radians, to_radians)
 
 
 @given(floats(), floats())
