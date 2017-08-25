@@ -1,7 +1,7 @@
-name: build
+name: polcart
 dependencies:
 - numpy
-- python=3.5
+- python=3.6
 - pytest
 - hypothesis
 - pycodestyle
