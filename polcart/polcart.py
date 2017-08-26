@@ -1,8 +1,5 @@
-try:
-    from numpy import sin, cos, pi, sqrt
-    from numpy import arctan2 as atan2
-except ImportError:
-    from math import sin, cos, pi, atan2, sqrt
+from numpy import sin, cos, pi, sqrt
+from numpy import arctan2 as atan2
 
 
 def to_cartesian(r, theta, theta_units="radians"):
