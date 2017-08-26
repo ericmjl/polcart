@@ -14,7 +14,7 @@ with open('test_requirements.txt') as testreq_file:
 
 setup(
     name='polcart',
-    version='2017.01.16.14.45',
+    version='2017.08.26.10.50',
     description="A small utility for converting between polar\
 and cartesian units.",
     long_description=readme,
